@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED on)
 add_executable(${PROJECT_NAME} ./main.cpp)
 
 # Library
-add_library(${PROJECT_NAME}_lib ./Builder.cpp)
-target_link_libraries(${PROJECT_NAME} STATIC ${PROJECT_NAME}_lib )
+add_library(${PROJECT_NAME}_lib ./builder.cpp)
+target_link_libraries(${PROJECT_NAME} PUBLIC ${PROJECT_NAME}_lib)
 
 # target_include_directories(${PROJECT_NAME} PRIVATE .)

@@ -20,26 +20,32 @@ CarBuilder& CarBuilder::setName(string n){
 }
 
 CarBuilder& CarBuilder::setBrand(string n){
-    this->name = n;
+    this->brand = n;
     return *this;
 }
 
 CarBuilder& CarBuilder::setModel(string n){
-    this->name = n;
+    this->model = n;
     return *this;
 }
 
 CarBuilder& CarBuilder::setGate(int n){
-    this->name = n;
+    this->gate = n;
     return *this;
 }
 
 CarBuilder& CarBuilder::setGPS(bool n){
-    this->name = n;
+    this->gps = n;
     return *this;
 }
 
 Car CarBuilder::build(){
-    cout<<Car(*this).gate<<endl
     return Car(*this);
+}
+
+string Car::toString(){
+    string res = brand +" "+ name +" "+ model + "\n";
+    res += to_string(gate) +" gates, ";
+    res += gps ? "and gps" : "no gps";
+    return res;
 }

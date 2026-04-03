@@ -1,7 +1,6 @@
 #ifndef CAR
 #define CAR
 
-#include <iostream>
 #include <string>
 
 using namespace std;
@@ -25,7 +24,11 @@ private:
 
 // Constructor
 public:
-    Car(const CarBuilder& builder);
+    explicit Car(const CarBuilder& builder);
+
+// Methods
+public:
+    string toString();
 };
 
 

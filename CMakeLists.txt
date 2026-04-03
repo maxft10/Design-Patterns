@@ -14,8 +14,10 @@ add_subdirectory(src/creational_patterns/builder)
 
 # Executable
 add_executable(${PROJECT_NAME} src/main.cpp)
-target_link_libraries(${PROJECT_NAME} PUBLIC Singletons_lib)
+target_link_libraries(${PROJECT_NAME} PUBLIC Singletons_lib
+                                                 Builder_lib)
 target_include_directories(${PROJECT_NAME} PUBLIC src/creational_patterns/singleton)
+target_include_directories(${PROJECT_NAME} PUBLIC src/creational_patterns/builder)
 
 
 
