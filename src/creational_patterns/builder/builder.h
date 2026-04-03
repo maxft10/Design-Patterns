@@ -1,5 +1,5 @@
-#ifndef CAR
-#define CAR
+#ifndef CAR_H
+#define CAR_H
 
 #include <string>
 
@@ -51,8 +51,6 @@ public:
     CarBuilder& setGate(int);
     CarBuilder& setGPS(bool);
     Car build();
-
-
 };
 
 #endif

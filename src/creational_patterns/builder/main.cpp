@@ -8,6 +8,8 @@ using namespace std;
 int main(){
 
     CarBuilder B;
+
+    // Chainining
     Car car = B.setBrand("Opel")
                         .setName("Corsa")
                         .setGPS(false)
