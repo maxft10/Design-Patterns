@@ -13,10 +13,11 @@ add_subdirectory(src/creational_patterns/factory)
 add_subdirectory(src/creational_patterns/builder)
 
 # Executable
-file(GLOB SOURCES_FILES src/main.cpp)
-add_executable(${PROJECT_NAME} ${SOURCES_FILES})
-target_link_libraries(${PROJECT_NAME} PUBLIC Singletons_lib)
+add_executable(${PROJECT_NAME} src/main.cpp)
+target_link_libraries(${PROJECT_NAME} PUBLIC Singletons_lib
+                                                 Builder_lib)
 target_include_directories(${PROJECT_NAME} PUBLIC src/creational_patterns/singleton)
+target_include_directories(${PROJECT_NAME} PUBLIC src/creational_patterns/builder)
 
 
 

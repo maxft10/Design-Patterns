@@ -1,12 +1,11 @@
-#ifndef SINGLETON
-#define SINGLETON
+#ifndef SINGLETON_H
+#define SINGLETON_H
 
 #include <memory>
 
 using namespace std;
 
 // Classic singleton
-
 class Singleton{
 
 private:
@@ -18,8 +17,8 @@ public:
 
 };
 
-// Singleton with smart pointer
 
+// Singleton with smart pointer
 class Singleton_sp{
 
 private:
@@ -28,11 +27,10 @@ private:
 
 public:
     static Singleton_sp* getInstance();
-
 };
 
-// Meyers Singleton
 
+// Meyers Singleton
 class Singletonn{
 
 private:
@@ -42,8 +40,6 @@ public:
     static Singletonn& getInstance();
     Singletonn(const Singletonn&) = delete;
     void operator=(const Singletonn&) = delete;
-
 };
-
 
 #endif
