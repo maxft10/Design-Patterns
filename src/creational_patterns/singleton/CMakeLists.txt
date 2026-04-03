@@ -6,7 +6,6 @@ project(Singletons VERSION 1.10)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
 
-
 # Executable
 add_executable(${PROJECT_NAME} ./main.cpp)
 
