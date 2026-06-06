@@ -39,7 +39,7 @@ private:
 public:
     static Singletonn& getInstance();
     Singletonn(const Singletonn&) = delete;
-    void operator=(const Singletonn&) = delete;
+    Singletonn& operator=(const Singletonn&) = delete;
 };
 
 #endif
