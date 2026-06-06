@@ -2,11 +2,11 @@
 
 ## Définition
 
-Le Builder pattern est une classe intermédiaire, située à l'intérieur ou à l'extérieur de la classe principale que l'on souhaite instancier. 
+Le Builder pattern est un design patern qui utilise une classe intermédiaire, située à l'intérieur ou à l'extérieur de la classe principale que l'on souhaite instancier, pour faciliter la création d'objets complexes.
 
 Il est particulièrement utile lorsque l'objet à créer possède de nombreux paramètres et qu'il est difficile de distinguer un constructeur unique pour tous les cas.
 
-Le Builder permet de créer l'objet progressivement, en accumulant les paramètres via des méthodes spécialisées. Une méthode `build()` de la classe Builder permet de renvoyer l'objet final construit.
+Le Builder permet de construire l'objet étape par étape en définissant progressivement ses différents attributs à l'aide de méthodes dédiées. Ces méthodes retournent généralement une référence vers le Builder lui-même afin de permettre le chaînage des appels. Une méthode `build()` de la classe Builder permet de créer et de retourner l'objet final construit.
 
 ---
 
